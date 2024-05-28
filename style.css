@@ -109,7 +109,6 @@ main {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
   gap: 40px;
   padding-right: 50px;
 
@@ -120,8 +119,6 @@ main {
     gap: 0px;
     justify-content: flex-start;
     align-items: center;
-    min-height: auto;
-    height: auto;
   }
 }
 
@@ -138,6 +135,7 @@ main {
     min-height: auto;
     width: 100%;
     height: auto;
+    min-height: auto;
     max-height: 100vh;
     overflow: hidden;
   }
@@ -145,8 +143,8 @@ main {
 
 .hero img {
   width: 100%;
-  min-height: 100vh;
   margin-left: auto;
+  height: 100vh;
 
   @media (max-width: 1060px) {
     border-radius: 10px;
@@ -182,9 +180,7 @@ main {
   align-items: flex-start;
 
   width: 50vw;
-  height: 50vh;
   min-width: 480px;
-  min-height: 502px;
   max-width: 100%;
   max-height: 100%;
   box-sizing: border-box;
@@ -515,7 +511,6 @@ main {
   gap: 10px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1100px;
 }
 
 .brands h2 {
