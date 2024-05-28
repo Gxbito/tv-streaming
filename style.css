@@ -72,6 +72,7 @@ footer {
 }
 
 svg {
+
   @media (max-width: 760px) {
     height: 14px;
     width: 14px;
@@ -91,7 +92,7 @@ footer > p {
   color: #000;
 
   @media (max-width: 760px) {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 
@@ -695,21 +696,38 @@ main {
 }
 
 .modal {
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 80px;
+  left: 0;
   margin: 0 auto;
   padding: 10px;
-  width: 320px;
+  width: 100%;
 
   font-weight: 400;
   font-size: 16px;
-  color: #ffffff;
   display: none;
-  background-color: rgb(44, 154, 44);
+  justify-content: center;
+  align-items: center;
 }
 
-.modal.appear {
-  display: block;
+.modal span {
+  width: 320px;
+  background-color: rgb(44, 154, 44);
+  padding: 10px;
+  transition: all .4s ease;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-appear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* Para Chrome, Safari, Edge y Opera */
