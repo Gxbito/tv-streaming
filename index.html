@@ -62,20 +62,20 @@
 
         <h1>TV Streaming Made Simple</h1>
 
-        <form class="form" id="radioForm">
+        <form class="form" id="tvForm" data-hs-form-id="your_form_id">
           <div class="input-container">
-            <input type="text" class="short-input" name="firstName" placeholder="First name" required />
-            <input type="text" class="short-input" name="lastName" placeholder="Last name" required />
+            <input type="text" class="short-input" name="firstname" placeholder="First name" required />
+            <input type="text" class="short-input" name="lastname" placeholder="Last name" required />
           </div>
-
+      
           <input type="email" class="large-input" name="email" placeholder="Email" required />
-
+      
           <div class="input-container">
             <input type="number" class="short-input" name="phone" placeholder="Phone number" required />
             <input type="text" class="short-input" name="zip" placeholder="Postal code" required />
           </div>
-
-          <select id="options" name="platformPreference" class="large-input">
+      
+          <select id="options" name="platformpreference" class="large-input" required>
             <option value="" disabled selected>Platform preference</option>
             <option value="Philo">Philo</option>
             <option value="Fubo">Fubo</option>
@@ -89,14 +89,14 @@
             <option value="Paramount+">Paramount+</option>
             <option value="Peacock">Peacock</option>
           </select>
-
+      
           <p>
             By clicking the button below, you consent for and its service provider to use automated technology,
             including calls, texts, and prerecorded messages, to contact you at the number and email provided about
             offers. This consent is not required to make a purchase. Clicking the button below constitutes your
             electronic signature.
           </p>
-
+      
           <div class="text-submit">
             <span>We respect your <a href="#">privacy</a></span>
             <button type="submit">Submit</button>
