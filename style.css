@@ -43,10 +43,51 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  position: relative;
 
   @media (max-width: 760px) {
-    gap: 0px;
-    justify-content: space-around;
+    gap: 18px;
+    justify-content: center;
+    padding: 0px 12px;
+  }
+}
+
+/* nav img {
+  position: absolute;
+  width: 60px;
+  left: 12px;
+
+  @media (max-width: 760px) {
+    height: 45px;
+  }
+} */
+
+.logo {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  @media (max-width: 760px) {
+    left: 10px;
+  }
+}
+
+.logo img {
+  height: 70px;
+
+  @media (max-width: 760px) {
+    height: 50px;
+  }
+}
+
+.logo h5 {
+  font-size: 15px;
+
+  @media (max-width: 760px) {
+    display: none;
   }
 }
 
@@ -60,7 +101,6 @@ footer {
   height: 64px;
   box-shadow: 0 10px 56px 0 rgba(0, 0, 0, 0.09);
   background: var(--foundation--neutral-neutral-50);
-  margin-top: auto;
 
   @media (max-width: 760px) {
     flex-direction: column;
@@ -72,9 +112,11 @@ footer {
 }
 
 svg {
+  height: 27px;
+  width: 27px;
   @media (max-width: 760px) {
-    height: 14px;
-    width: 14px;
+    height: 17px;
+    width: 17px;
   }
 }
 
@@ -95,6 +137,15 @@ footer > p {
   }
 }
 
+nav > a {
+  font-size: 18px;
+  gap: 6px;
+  @media (max-width: 760px) {
+    font-size: 12px;
+    gap: 3px;
+  }
+}
+
 footer > a:hover {
   text-decoration: underline;
 }
@@ -107,7 +158,7 @@ main {
 .hero-container {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   gap: 40px;
   padding-right: 50px;
@@ -185,7 +236,7 @@ main {
   max-height: 100%;
   box-sizing: border-box;
   transition: width 0.3s, height 0.3s;
-  margin-bottom: 100px;
+  padding-top: 20px;
 
   @media (max-width: 1400px) {
     margin-bottom: 0px;
@@ -202,20 +253,21 @@ main {
 }
 
 .form-container h1 {
-  font-size: 40px;
+  font-size: 38px;
+  margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
 
   @media (max-width: 1060px) {
     font-size: 24px;
     text-align: center;
-    margin: 15px 0px;
+    margin: 15px auto;
   }
 
   @media (max-width: 360px) {
     font-size: 16px;
     text-align: center;
-    margin: 15px 0px;
+    margin: 15px auto;
   }
 }
 
@@ -237,7 +289,7 @@ main {
   transition: width 0.3s, height 0.3s;
 
   @media (max-width: 1060px) {
-    width: 520px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -306,6 +358,18 @@ main {
   @media (max-width: 360px) {
     font-size: 11px;
     max-width: 300px;
+  }
+}
+
+.form + p {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+
+  @media (max-width: 360px) {
+    font-size: 11px;
   }
 }
 
@@ -522,9 +586,14 @@ main {
 }
 
 .brands p {
-  max-width: 700px;
+  max-width: 50%;
   margin-right: auto;
   margin-bottom: 20px;
+
+  @media (max-width: 1060px) {
+    width: 100%;
+    max-width: 100% ;
+  }
 
   @media (max-width: 360px) {
     font-size: 11px;
