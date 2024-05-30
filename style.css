@@ -46,9 +46,9 @@ nav {
   position: relative;
 
   @media (max-width: 760px) {
-    gap: 18px;
-    justify-content: center;
-    padding: 0px 12px;
+    gap: 0px;
+    justify-content: space-around;
+    padding: 0px 8px;
   }
 }
 
@@ -144,12 +144,6 @@ nav > a {
     font-size: 12px;
     gap: 3px;
   }
-}
-
-nav > a:nth-child(1) {
-  margin-right: auto;
-  position: absolute;
-  left: 15px;
 }
 
 footer > a:hover {
@@ -371,7 +365,8 @@ main {
   }
 }
 
-.form-container h1 + p {
+.form-container h1 + p,
+.form-container h1 + p + p {
   margin: 0 auto;
   text-align: justify;
   font-size: 16px;
